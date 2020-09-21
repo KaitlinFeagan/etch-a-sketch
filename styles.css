@@ -19,21 +19,12 @@ p {
 }
 
 div {
-    margin-left: 12%;
-    max-width: 960px;
-    max-height: 960px;
+    margin-left: 15%;
+    max-width: 900px;
+    max-height: 1000px;
     display: inline-block;
     font-size: 0;
     align-items: stretch; 
-}
-
-.container {
-    align-items: stretch;
-    position: fixed;
-    font-size: 0;
-    flex-wrap: wrap;
-    width: 960px;
-    height: 960px;
 }
 
 .node {
@@ -44,9 +35,9 @@ div {
     flex-grow: 1;
     flex-shrink: 1;
     min-height: 16px;
-    max-width: 960px;
-    width: 40px;
-    height: 40px;
+    max-width: 800px;
+    width: 30px;
+    height: 30px;
     text-align: justify;
     border: 1px solid;
     border-color: #770099;
@@ -65,16 +56,21 @@ button {
     width: 15%;
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-left: 3.5%;
+    margin-left: 5%;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+}
+
+button#black {
+    margin-left: 17%;    
 }
 
 button#clear {
     color: black;
     background-color: #dedede;
     width: 25%;
+    margin-left: 5%;
 }
 
 button#custom {

@@ -1,19 +1,14 @@
-function gridSize(rows, columns) {
-    let grid = rows * columns;
+function gridSize(rows) {
+    let grid = rows ** 2;
     return grid;
 }
 
-let rows;
-let columns;
-
-let nodeNumber = gridSize(16, 16);
+let nodeNumber = gridSize(30);
 console.log(nodeNumber);
 
 let container = document.querySelector('#container');
 
 function createNode() {
-    rows = 16;
-    columns = 16;
     const node = document.createElement('div');
     node.classList.add('node');
     node.addEventListener('mouseenter', function(e) {
@@ -41,12 +36,6 @@ function createNode() {
         }
     }
 
-    function custom() {
-        alert("I'll do this later lol");
-    }
-
-
-
     const buttons = document.querySelectorAll('button');
     buttons.forEach((button) => {
 
@@ -57,16 +46,11 @@ function createNode() {
             color();
         } else if (button.id === 'clear') {
             clear();
-        } else if (button.id === 'custom') {
-            custom();
-            return;
         } else {
             return;
         }
     })});
 }
-
-
 
 function createGrid() {
     for(x=0; x<nodeNumber; x++) {
@@ -75,6 +59,3 @@ function createGrid() {
 }
 
 createGrid();
-
-
-
